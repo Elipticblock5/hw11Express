@@ -14,6 +14,11 @@ An app that uses Express.JS to create notes and delete notes for task mangement.
 
 https://nates-note-taker-app.herokuapp.com/
 
+## SreenShots
+
+[!Screenshot](./public/assets/images/NoteTakerSS.PNG)
+[!Screenshot](./public/assets/images/SSNoteData.PNG)
+
 ## Table of Contents
 
 - [License](#License)

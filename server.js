@@ -29,14 +29,20 @@ app.post("/api/notes", (req, res) => {
     let notesLength = (notesList.length).toString();
 
     //id for new note
-    createNote.id = notelenght;
+    createNote.id = notesLength;
     notesList.push(createNote);
 
+    
+
+    //writes teh note to db json
     fs.writeFileSync("./db/db.json", JSON.stringify(notesList));
     res.json(notesList);
 })
 
-
+//back to main page route
+app.get("*", (req,res) => {
+    res.sendFile(path.join(__dirname, "/public/index.html"));
+});
 
 //listening to server
-app.listen(PORT, () => console.log("Nate your port is on" + PORT));
+app.listen(PORT, () => console.log("Nate your port is on " + PORT));

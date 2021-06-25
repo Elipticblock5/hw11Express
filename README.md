@@ -16,8 +16,8 @@ https://nates-note-taker-app.herokuapp.com/
 
 ## SreenShots
 
-[!Screenshot](./public/assets/images/NoteTakerSS.PNG)
-[!Screenshot](./public/assets/images/SSNoteData.PNG)
+![Screenshot 1](./public/assets/images/NoteTakerSS.PNG)
+![Screenshot 2](./public/assets/images/SSNoteData.PNG)
 
 ## Table of Contents
 

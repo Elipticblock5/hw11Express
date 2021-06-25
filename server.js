@@ -11,6 +11,15 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: ture }));
 app.use(express.json());
 
+//notes routing
+app.get("/notes", (req, res) => {
+    res.sendFile(path.join(__dirname, "/public/notes.html"));
+});
+
+//api to notes
+app.get("/api/notes", (req, res) => {
+    res.sendFile(path.join(__dirname, "/db/db.json"));
+});
 
 //listening to server
 app.listen(PORT, () => console.log("Nate your port is on" + PORT));
